@@ -17,18 +17,18 @@ from config import HNDLR, bot, call_py
 from MusicUserbot.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
-    "https://telegra.ph/file/613f681a511feb6d1b186.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
+    "https://telegra.ph/file/1ac0c853aff3ee28ede12.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -128,10 +128,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Lagu Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Permintaan: {m.from_user.mention}**
+**📡 Lagu Di Antrian Ke {pos}
+🎤 Judul: [{songname}]({link})
+🎷 Status: Playing
+🎨 Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -148,10 +148,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Mulai Memutar Lagu
-🏷 Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡  Mulai Memutar Lagu
+🎤 Judul: [{songname}]({link})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -179,10 +179,10 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**▶ Lagu Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Lagu Di Antrian Ke {pos}
+🎤 Judul: [{songname}]({url})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -200,10 +200,10 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Lagu
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Mulai Memutar Lagu
+🎤 Judul: [{songname}]({url})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -247,10 +247,10 @@ async def videoplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Video Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Video Di Antrian Ke {pos}
+🎤 Judul: [{songname}]({link})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -271,10 +271,10 @@ async def videoplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Mulai Memutar Video
-🏷️ Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Atas permintaan: {m.from_user.mention}**
+**📡 Mulai Memutar Video
+🎤 Judul: [{songname}]({link})
+🎷 Status: Playing
+🎨 Atas permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -308,10 +308,10 @@ async def videoplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**▶ Video Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Video Di Antrian Ke {pos}
+🎤 Judul: [{songname}]({url})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -327,10 +327,10 @@ async def videoplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Video
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Mulai Memutar Video
+🎤 Judul: [{songname}]({url})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -376,15 +376,15 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                         caption=f"""
-**▶ Mulai Memutar Lagu Dari {chat}
-🏷️ Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**📡 Mulai Memutar Lagu Dari {chat}
+🎤 Judul: [{songname}]({link})
+🎷 Status: Playing
+🎨 Atas Permintaan: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
             await m.reply(
-                f"âž• Menambahkan {lmt} Lagu Ke Dalam Antrian\nâ€¢ Klik {HNDLR}playlist Untuk Melihat Daftar Putar**"
+                f" Menambahkan {lmt} Lagu Ke Dalam Antrian\nâ€¢ Klik {HNDLR}playlist Untuk Melihat Daftar Putar**"
             )
         except Exception as e:
             await hmm.edit(f"**ERROR** \n`{e}`")
